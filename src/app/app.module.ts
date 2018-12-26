@@ -25,12 +25,16 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthGuard } from './guards/auth.guard';
+import { AuthInterceptorService } from './services/auth-interceptor.service';
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
@@ -46,7 +50,14 @@ import { RegisterComponent } from './auth/register/register.component';
     LoginComponent,
     RegisterComponent,
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass:AuthInterceptorService,
+      multi:true
+    },
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
