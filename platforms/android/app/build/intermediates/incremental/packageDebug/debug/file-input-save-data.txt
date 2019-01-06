@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Dec 20 11:30:53 EET 2018
+#Sun Jan 06 15:35:05 EET 2019
 122.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-ldpi-v4\\screen.png
 60.set=ASSET
 129.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\assets\\scss\\core\\mixins\\_breakpoints.scss
@@ -18,7 +18,7 @@
 99.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\assets\\scss\\core\\_ripples.scss
 100.set=ASSET
 106.base=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
-52.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xhdpi-v4\\screen.png
+52.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xxhdpi-v4\\screen.png
 62.base=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 59.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\assets\\scss\\core\\_cards.scss
 69.base=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug
@@ -370,7 +370,7 @@ count=134
 100.base=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 102.set=ASSET
 107.base=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug
-53.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xxhdpi-v4\\screen.png
+53.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xhdpi-v4\\screen.png
 63.base=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 114.base=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 13.file=C\:\\works\\tekin\\Lades\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\styles.b51a38c4f21d342fc6df.css

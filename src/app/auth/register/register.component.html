@@ -8,30 +8,41 @@
                 <div class="card text-center">
                     <div class="card-header card-header-danger">
                         <h4 class="card-title">Register</h4>
-                        <p class="card-category">login to page</p>
+                        <p class="card-category">register page</p>
                     </div>
                     <div class="card-body text-center">
-                        <form>
+                        <form #registerForm="ngForm">
+
+                            <div class="row" *ngIf="registerError!=''">
+                                <div class="col-md-12">
+                                    <p class="info-red" style="font-size: large">* {{registerError}}</p>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="col-md-12">
                                     <mat-form-field >
-                                        <input matInput placeholder="Email address" type="email">
+                                        <input  name="email" required [(ngModel)]="email" matInput placeholder="Email address" type="email">
                                     </mat-form-field>
+                                    <mat-error *ngIf="emailError!=''">{{emailError}}</mat-error>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <mat-form-field >
-                                        <input matInput placeholder="Password" type="password">
+                                        <input name="password1" [(ngModel)]="password1" matInput placeholder="Password" type="password">
                                     </mat-form-field>
+                                    <mat-error *ngIf="password1Error!=''">{{password1Error}}</mat-error>
                                 </div>
                                 <div class="col-md-6">
                                     <mat-form-field >
-                                        <input matInput placeholder="Password *" type="password">
+                                        <input name="password2" [(ngModel)]="password2" matInput placeholder="Password *" type="password">
                                     </mat-form-field>
+                                    <mat-error *ngIf="password2Error!=''">{{password2Error}}</mat-error>
                                 </div>
                             </div>
-                            <button mat-raised-button type="submit" class="btn btn-danger pull-center">Register</button>
+                            <button mat-raised-button type="submit" class="btn btn-danger pull-center"
+                            (click)="register()">Register</button>
                             <div class="clearfix"></div>
                         </form>
                     </div>

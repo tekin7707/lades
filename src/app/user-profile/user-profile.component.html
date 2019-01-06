@@ -22,19 +22,19 @@
                               </div>
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Email address" type="email">
+                                    <input matInput placeholder="Email address" type="email" id="email" [(ngModel)]="user.email" name="email">
                                   </mat-form-field>
                               </div>
                           </div>
                           <div class="row">
                               <div class="col-md-6">
                                 <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Fist Name" type="text">
+                                  <input id="firstName" [(ngModel)]="user.firstName" name="firstName" matInput placeholder="Fist Name" type="text">
                                 </mat-form-field>
                               </div>
                               <div class="col-md-6">
                                 <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Last Name" type="text">
+                                  <input id="lastName" [(ngModel)]="user.lastName" name="lastName" matInput placeholder="Last Name" type="text">
                                 </mat-form-field>
                               </div>
                           </div>
@@ -77,7 +77,7 @@
                                   </div> -->
                               </div>
                           </div>
-                          <button mat-raised-button type="button" (click)="getUserList()" class="btn btn-danger pull-right">Update Profile</button>
+                          <button mat-raised-button type="button" (click)="update()" class="btn btn-danger pull-right">Update Profile</button>
                           <div class="clearfix"></div>
                       </form>
                   </div>

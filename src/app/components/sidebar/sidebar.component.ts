@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'app/models/dataModel';
+import { AuthService } from 'app/services/auth.service';
+import { Router } from '@angular/router';
 
 declare const $: any;
 declare interface RouteInfo {
@@ -25,7 +28,18 @@ export const ROUTES: RouteInfo[] = [
 export class SidebarComponent implements OnInit {
   menuItems: any[];
 
-  constructor() { }
+  user:User;
+  constructor(
+      private authSerivce: AuthService,
+      private router: Router
+      ) {
+    this.user = authSerivce.getLoginUser();
+   }
+
+   logout(){
+    this.authSerivce.logout();
+    this.router.navigate(['login']);
+}
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);

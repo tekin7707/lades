@@ -7,8 +7,8 @@ export class RequestResult {
 export class User {
     email: string;
     password: string;
-    firstName: string;
-    lastName: string;
-    token: string;
-    state: number;
+    firstName?: string;
+    lastName?: string;
+    token?: string;
+    state?: number;
 };
